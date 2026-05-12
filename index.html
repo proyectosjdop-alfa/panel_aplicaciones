@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Aplicaciones ENEE-UTCD</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div class="logo-container">
+                <img src="https://raw.githubusercontent.com/proyectosjdop-alfa/panel_aplicaciones/516588f17de89f8455ccd5790c965358e7b3a819/imagenes/UTCD%20Vertical%20.png" alt="Logo ENEE">
+            </div>
+            <h1>PANEL DE APLICACIONES WEB ENEE-UTCD</h1>
+        </header>
+
+        <main class="grid-panel">
+            <a href="https://proyectosjdop-alfa.github.io/app_poda/" class="app-card">
+                <div class="image-wrapper">
+                    <img src="https://raw.githubusercontent.com/proyectosjdop-alfa/panel_aplicaciones/refs/heads/main/imagenes/Poda.png" alt="Poda Comunitaria">
+                </div>
+                <h3>Poda Comunitaria</h3>
+            </a>
+
+            <a href="https://proyectosjdop-alfa.github.io/traslado_materiales/" class="app-card">
+                <div class="image-wrapper">
+                    <img src="https://raw.githubusercontent.com/proyectosjdop-alfa/panel_aplicaciones/refs/heads/main/imagenes/Materiales.jpg" alt="Traslado de Materiales">
+                </div>
+                <h3>Traslado de Materiales</h3>
+            </a>
+
+            <div class="app-card" onclick="appEnProceso()">
+                <div class="image-wrapper">
+                    <img src="https://raw.githubusercontent.com/proyectosjdop-alfa/panel_aplicaciones/refs/heads/main/imagenes/Red.jpg" alt="Otros">
+                </div>
+                <h3>OTROS</h3>
+                <span class="badge">Próximamente</span>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 ENEE - Unidad de Transmisión y Control de Distribución</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
