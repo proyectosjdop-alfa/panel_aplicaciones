@@ -1,0 +1,133 @@
+:root {
+    --primary: #1b2a36;    /* Azul oscuro ENEE */
+    --accent: #f4c430;     /* Amarillo/Dorado */
+    --bg: #f4f7f6;         /* Gris muy claro */
+    --text: #333;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    text-align: center;
+    padding: 20px;
+}
+
+header {
+    margin-bottom: 40px;
+}
+
+.logo-container {
+    background: var(--white);
+    padding: 20px;
+    border-radius: 15px;
+    display: inline-block;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.logo-container img {
+    max-width: 280px;
+    height: auto;
+}
+
+h1 {
+    font-size: 1.8rem;
+    color: var(--primary);
+    border-bottom: 3px solid var(--accent);
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+/* El Grid de Aplicaciones */
+.grid-panel {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 20px;
+}
+
+.app-card {
+    background: var(--white);
+    border-radius: 15px;
+    padding: 20px;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.app-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+    border: 2px solid var(--accent);
+}
+
+.image-wrapper {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta la imagen al cuadro sin deformarla */
+}
+
+h3 {
+    font-size: 1.2rem;
+    color: var(--primary);
+    margin-top: 10px;
+}
+
+.badge {
+    position: absolute;
+    top: 10px;
+    right: -30px;
+    background: var(--accent);
+    color: var(--primary);
+    font-size: 0.7rem;
+    font-weight: bold;
+    padding: 5px 40px;
+    transform: rotate(45deg);
+}
+
+footer {
+    margin-top: 50px;
+    font-size: 0.8rem;
+    color: #777;
+}
+
+/* Responsividad para móviles */
+@media (max-width: 600px) {
+    h1 { font-size: 1.4rem; }
+    .grid-panel { grid-template-columns: 1fr; }
+}
