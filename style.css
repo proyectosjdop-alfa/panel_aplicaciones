@@ -33,25 +33,32 @@ header {
     margin-bottom: 40px;
 }
 
+/* 1. Ajuste del contenedor para centrado total */
 .logo-container {
     background: var(--white);
-    padding: 20px;
+    padding: 10px; /* Reducido para que no ocupe tanto espacio innecesario */
     border-radius: 15px;
-    display: inline-block;
+    display: block; /* Cambiado de inline-block a block */
+    margin: 0 auto 15px auto; /* Centrado automático horizontal */
+    max-width: fit-content; /* Se ajusta solo al tamaño de la imagen */
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    margin-bottom: 20px;
 }
 
+/* 2. Ajuste del tamaño del logo */
 .logo-container img {
-    max-width: 280px;
+    max-width: 220px; /* Tamaño más equilibrado para móviles y web */
     height: auto;
+    display: block; /* Elimina espacios extra debajo de la imagen */
+    margin: 0 auto;
 }
 
+/* 3. Asegurar que el título esté debajo */
 h1 {
     font-size: 1.8rem;
     color: var(--primary);
     border-bottom: 3px solid var(--accent);
     display: inline-block;
+    margin-top: 10px; /* Espacio respecto al logo */
     padding-bottom: 10px;
 }
 
